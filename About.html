@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rishi- Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <!-- <link rel="stylesheet" href="responsive.css" /> -->
+    <style>
+     * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(16, 16, 42);
+    height: 80px;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    list-style-type: none;
+    margin: 0 23px;
+    /* padding: 23px 0; */
+  }
+  .left {
+    margin: 0 23px;
+    font-size: 1.2rem;
+  }
+  .section1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 110px 0;
+    align-items: center;
+  }
+  .section1 > div {
+    width: 30%;
+  }
+  .leftsection {
+    font-size: 2.3rem;
+  }
+  .leftsection .button{
+    padding: 23px 0px;
+  }
+  .leftsection .btn {
+    padding: 11px;
+    color: wheat;
+    background-color: #000121;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  nav ul a {
+    text-decoration: none;
+    color: white;
+  }
+  ul li a:hover {
+    color: wheat;
+    font-size: 1.02rem;
+  }
+  main hr {
+    border: 0;
+    background-color: #9c97f1;
+    height: 1.2px;
+    margin: 40px 84px;
+  }
+  .rightsection img {
+    /* background-color: red; */
+    height: 260px;
+    /* margin: 50px 0; */
+    /* width:80% */
+  }
+  .purple {
+    color: rgb(173, 147, 198);
+  }
+  #element {
+    color: rgb(173, 147, 198);
+  }
+  .section2 {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+  }
+  .section2 h1 {
+    font-size: 2rem;
+  }
+  .box {
+    background-color: white;
+    height: 2px;
+    width: 86vw;
+    margin: 56px 0;
+    display: flex;
+  }
+  .section2 .vertical {
+    height: 97px;
+    width: 1px;
+    background-color: white;
+    margin: 0 110px;
+  }
+  .image-top {
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+  }
+  .vertical-title {
+    position: relative;
+    top: 79px;
+    width: 150px;
+    font-size: 14px;
+  }
+  .vertical-desc {
+    position: relative;
+    top: 86px;
+    width: 150px;
+    color: gray;
+    font-size: 9px;
+  }
+
+  .text-grey {
+    color: gray;
+  }
+  .year {
+    color: purple;
+  }
+  footer {
+    /* height: 233px; */
+    background-color: #0e0e0e;
+  }
+  .footer {
+    display: flex;
+    padding: 22px 122px;
+    justify-content: space-evenly;
+  }
+  .footer ul {
+    list-style-type: none;
+  }
+  .footer > div {
+    width: 200px;
+  }
+  .footer-right {
+    text-align: center;
+    /* background-color: wheat; */
+    color: grey;
+    padding: 12px 0;
+  }
+  @media screen and (max-width: 1200px){
+  body {
+    
+    color: red;
+  }
+  nav {
+    display: inline;
+    height: 50px;
+  }
+  nav ul li {
+    list-style-type: none;
+    margin: -37px 3px;
+    padding: 19px;
+    font-size: 1rem;
+}
+  }
+
+@media screen and (max-width: 800px) {
+ body {
+   
+    color: red;
+  }
+  nav {
+    display: inline;
+    height: 50px;
+  }
+  nav ul li {
+    list-style-type: none;
+    margin: 0 14px;
+    padding: 13px;
+  }
+
+  .left {
+    font-size: 18px;
+    display: inline-table;
+  }
+  .right {
+    font-size: 9px;
+    display: inline-table;
+  }
+
+  .rightsection img {
+   
+    height: 120px;
+    margin-bottom: 50px;
+  }
+  .leftsection {
+    font-size: small;
+  }
+
+  .button .btn {
+
+    height: 20px;
+    font-size: 6px;
+    padding: 0px 9px;
+  
+    background-color: #000130;
+    border-radius: 25px;
+    margin-bottom: 10px;
+  }
+} 
+@media screen and (max-width: 400px )and (min-width:800 ) {
+  nav ul li {
+    list-style-type: none;
+    margin: 3px 35px;
+    padding: 9px 9px;
+  }
+  .section1>div{
+    width:37%;
+  }
+  .leftsection{
+    font-size: 25px;
+  }
+  .rightsection img{
+  height: 192px;
+  }
+  .button .btn {
+    /* width:50px; */
+    height: 25px;
+    font-size: 11px;
+    padding: 6px 12px;
+    /* margin: 10px 0px; */
+    background-color: #000130;
+    border-radius: 25px;
+    margin-bottom: 11px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Rishi's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/About">About</a></li>
+            <li><a href="/Services ">Services</a></li>
+            <li><a href="/Project">Projects</a></li>
+            <li><a href="/Contact">Contact </a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section1">
+        <div class="leftsection">
+          Hi, My name is <span class="purple">Rushi</span>
+          <div>And I am a</div>
+          <span id="element"></span>
+          <div class="button">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit GitHub</button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="img/developer.jpg" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="section2">
+        <div class="text-grey">What about my Programming Knowledge.</div>
+        <h1>Programming Knowledge</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="img/site2.png" alt="" />
+            <div class="vertical-title">
+              C/C++<span class="year">(2019-2020)</span>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              perferendis consectetur velit quis eaque? Debitis expedita
+              voluptatem omnis autem nemo rem alias beatae cupiditate, quaerat
+              nobis ipsa porro itaque. Soluta, fugit officia!
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="img/site2.png" alt="" />
+            <div class="vertical-title">
+              HTML <b>,</b> CSS  <span class="year">(2020-2021)</span>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              perferendis consectetur velit quis eaque? Debitis expedita
+              voluptatem omnis autem nemo rem alias beatae cupiditate, quaerat
+              nobis ipsa porro itaque. Soluta, fugit officia!
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="img/site2.png" alt="" />
+            <div class="vertical-title">
+              JAVA <span class="year">(2021-2022)</span>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              perferendis consectetur velit quis eaque? Debitis expedita
+              voluptatem omnis autem nemo rem alias beatae cupiditate, quaerat
+              nobis ipsa porro itaque. Soluta, fugit officia!
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="img/site2.png" alt="" />
+            <div class="vertical-title">
+              JAVASCRIPT<span class="year">(2021-2022)</span>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              perferendis consectetur velit quis eaque? Debitis expedita
+              voluptatem omnis autem nemo rem alias beatae cupiditate, quaerat
+              nobis ipsa porro itaque. Soluta, fugit officia!
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="img/site2.png" alt="" />
+            <div class="vertical-title">
+              REACT JS  <span class="year">(2022-2023)</span>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              perferendis consectetur velit quis eaque? Debitis expedita
+              voluptatem omnis autem nemo rem alias beatae cupiditate, quaerat
+              nobis ipsa porro itaque. Soluta, fugit officia!
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="text-grey">What I am done so far.</div>
+        <h1>personal Projects</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="img/site2.png" alt="" />
+            <div class="vertical-title">
+              C/C++ PROJECTS<span class="year">(2019-2020)</span>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              perferendis consectetur velit quis eaque? Debitis expedita
+              voluptatem omnis autem nemo rem alias beatae cupiditate, quaerat
+              nobis ipsa porro itaque. Soluta, fugit officia!
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="img/site2.png" alt="" />
+            <div class="vertical-title">
+              HTML CSS  PROJECTS <span class="year">(2020-2021)</span>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              perferendis consectetur velit quis eaque? Debitis expedita
+              voluptatem omnis autem nemo rem alias beatae cupiditate, quaerat
+              nobis ipsa porro itaque. Soluta, fugit officia!
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="img/site2.png" alt="" />
+            <div class="vertical-title">
+              JAVA  PROJECTS <span class="year">(2021-2022)</span>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              perferendis consectetur velit quis eaque? Debitis expedita
+              voluptatem omnis autem nemo rem alias beatae cupiditate, quaerat
+              nobis ipsa porro itaque. Soluta, fugit officia!
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="img/site2.png" alt="" />
+            <div class="vertical-title">
+              JAVASCRIPT  PROJECTS <span class="year">(2021-2022)</span>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              perferendis consectetur velit quis eaque? Debitis expedita
+              voluptatem omnis autem nemo rem alias beatae cupiditate, quaerat
+              nobis ipsa porro itaque. Soluta, fugit officia!
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="img/site2.png" alt="" />
+            <div class="vertical-title">
+              REACT JS  PROJECTS <span class="year">(2022-2023)</span>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              perferendis consectetur velit quis eaque? Debitis expedita
+              voluptatem omnis autem nemo rem alias beatae cupiditate, quaerat
+              nobis ipsa porro itaque. Soluta, fugit officia!
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Rishi's Developer portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-right">
+        copyright &copy; Rishi'sPortfolio.com | All right reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer.", "web designer.", "&amp; Excel Analysis."],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
